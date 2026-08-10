@@ -1,4 +1,5 @@
 # © @MuskanBot
+
 import asyncio
 import os
 import re
@@ -8,17 +9,23 @@ import requests
 import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
-from youtubesearchpython.__future__ import VideosSearch
-from IstkharMusic.utils.database import is_on_off
-from IstkharMusic.utils.formatters import time_to_seconds
+from py_yt import VideosSearch
+try:
+    from py_yt import Recommendations as _PyYtRec
+except ImportError:
+    _PyYtRec = None
+from Muskan_Music.helpers._store import is_on_off
+from Muskan_Music.helpers._fmt import time_to_seconds
 import os
 import glob
 import random
 import logging
 import aiohttp
 import config
-from config import API_URL, API_KEY
-
+from config import LOGGER_ID
+from Muskan_Music import app
+from config import BASE_URL, API_KEY
+from urllib.parse import urlparse, unquote
 
 STREAM_MODE = False
 
