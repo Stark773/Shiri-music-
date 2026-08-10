@@ -14,8 +14,8 @@ try:
     from py_yt import Recommendations as _PyYtRec
 except ImportError:
     _PyYtRec = None
-from Muskan_Music.helpers._store import is_on_off
-from Muskan_Music.helpers._fmt import time_to_seconds
+from IstkharMusic.helpers._store import is_on_off
+from IstkharMusic.helpers._fmt import time_to_seconds
 import os
 import glob
 import random
@@ -23,7 +23,7 @@ import logging
 import aiohttp
 import config
 from config import LOGGER_ID
-from Muskan_Music import app
+from IstkharMusic import app
 from config import BASE_URL, API_KEY
 from urllib.parse import urlparse, unquote
 
