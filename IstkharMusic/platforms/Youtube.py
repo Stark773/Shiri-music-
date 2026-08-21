@@ -15,7 +15,7 @@ try:
 except ImportError:
     _PyYtRec = None
 from IstkharMusic.utils.database import is_on_off
-from IstkharMusic.utils._fmt import time_to_seconds
+from IstkharMusic.utils.formatters import time_to_seconds
 import os
 import glob
 import random
