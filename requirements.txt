@@ -23,5 +23,4 @@ spotipy
 unidecode
 uvloop; sys_platform != "win32"
 yt-dlp
-
 iq_yt
