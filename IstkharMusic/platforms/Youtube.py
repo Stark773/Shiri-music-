@@ -9,9 +9,9 @@ import requests
 import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
-from iq-yt import VideosSearch
+from iq_yt import VideosSearch
 try:
-    from iq-yt import Recommendations as _PyYtRec
+    from iq_yt import Recommendations as _PyYtRec
 except ImportError:
     _PyYtRec = None
 from IstkharMusic.helpers._store import is_on_off
