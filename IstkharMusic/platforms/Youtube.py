@@ -14,8 +14,8 @@ try:
     from iq_yt import Recommendations as _PyYtRec
 except ImportError:
     _PyYtRec = None
-from IstkharMusic.helpers._store import is_on_off
-from IstkharMusic.helpers._fmt import time_to_seconds
+from IstkharMusic.utils.database import is_on_off
+from IstkharMusic.utils._fmt import time_to_seconds
 import os
 import glob
 import random
