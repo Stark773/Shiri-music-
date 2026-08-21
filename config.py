@@ -22,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1700))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", -1002488365579))
 LOGGER_ID = LOG_GROUP_ID
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7152072474))
+OWNER_ID = int(getenv("OWNER_ID", 6657539971))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -83,10 +83,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/o2mqtp.jpg"
+    "START_IMG_URL", "https://litter.catbox.moe/u3s14u.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/o2mqtp.jpg"
+    "PING_IMG_URL", "https://litter.catbox.moe/u3s14u.jpg"
 )
 PLAYLIST_IMG_URL = "https://files.catbox.moe/pfjgmf.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/st6utj.jpg"
